@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>
@@ -29,16 +31,19 @@
 <li><p>Breakpoints: especifica puntos de interrupción en tu hoja de estilo CSS donde cambiará la presentación de la tipografía en diferentes tamaños de pantalla.</p></li>
 <li><p>Fuentes adaptables: utiliza una herramienta como "Font Face Observer" para cargar fuentes de forma asíncrona y garantizar una experiencia uniforme en diferentes dispositivos.</p></li>
 <li><p>Media Queries: especifica reglas CSS específicas para diferentes tamaños de pantalla usando media queries.</p></li>
+</ul>
 <p>Estas técnicas te permiten asegurarte de que la tipografía se vea bien en todos los dispositivos y resoluciones de pantalla.</p>
-                </ul>
-                <li class="encabezado">Para controlar el tamaño de imágenes en diferentes tamaños de pantalla en diseño web, puedes utilizar:</li>
+<li class="encabezado">Para controlar el tamaño de imágenes en diferentes tamaños de pantalla en diseño web, puedes utilizar:</li>
+                
                 <ul>
+                  
                     <li><p>Imágenes adaptables: usa la etiqueta "srcset" y "sizes" para especificar varias versiones de una imagen a diferentes resoluciones, y dejar que el navegador elija la mejor versión para cada dispositivo.</p></li>
 <li><p>Tamaño de contenedor: define un tamaño máximo para el contenedor de la imagen en CSS y haz que la imagen se ajuste dentro de él usando una propiedad como "background-size: cover".</p></li>
 <li><p>Breakpoints: especifica puntos de interrupción en tu hoja de estilo CSS donde cambiará el tamaño de la imagen en diferentes tamaños de pantalla.</p></li>
 <li><p>Media Queries: usa media queries para especificar reglas CSS para cambiar el tamaño de la imagen en diferentes resoluciones de pantalla.</p></li>
+</ul>
 <p>Estas técnicas te permiten asegurarte de que las imágenes se vean claras y bien proporcionadas en todos los dispositivos y resoluciones de pantalla.</p>
-                </ul>
+                
                 <li class="encabezado">Las técnicas de responsividad en diseño web son técnicas que permiten que un sitio web se adapte automáticamente a diferentes tamaños de pantalla y dispositivos. Algunas técnicas incluyen:</li>
                 <ul>
                     <li><p>Medidas relativas: usa unidades relativas como porcentajes o em en lugar de píxeles para especificar tamaños de elementos.</p></li>
@@ -46,13 +51,16 @@
 <li><p>Media Queries: usa media queries para especificar reglas CSS específicas para diferentes tamaños de pantalla.</p></li>
 <li><p>Imágenes adaptables: usa la etiqueta "srcset" y "sizes" para especificar varias versiones de una imagen a diferentes resoluciones, y dejar que el navegador elija la mejor versión para cada dispositivo.</p></li>
 <li><p>Flexbox y Grid Layout: usa estos métodos para organizar elementos de forma flexible y adaptable en la página.</p></li>
+</ul>
 <p>Estas técnicas permiten que un sitio web se vea bien en todos los dispositivos, desde teléfonos móviles hasta escritorios, sin necesidad de crear versiones diferentes del sitio para cada dispositivo.</p>
-                </ul>
+                
                 <li class="encabezado">Las unidades relativas se usan en CSS para especificar tamaños de elementos en relación a otros elementos en la página en lugar de en términos absolutos. Las unidades relativas más comunes son "em" y "%".</li>
                 <ul>
                     <li><p>"em": Un "em" es una unidad de medida equivalente al tamaño de la fuente actual en el elemento. Por ejemplo, si se define una fuente de 16 píxeles, 1 em sería igual a 16 píxeles.</p></li>
 <li><p>"%": El porcentaje se refiere a una fracción del tamaño del elemento padre. Por ejemplo, si se define un tamaño de 100% para un elemento hijo, será del mismo tamaño que el elemento padre.</p></li>
-<p>Ejemplo:</p>
+
+                </ul>
+                <p>Ejemplo:</p>
 <pre><code>
 
 body {
@@ -70,7 +78,6 @@ h1 {
 <p>
     Al usar unidades relativas, el tamaño de los elementos se ajusta automáticamente a diferentes tamaños de pantalla y dispositivos, lo que garantiza una experiencia uniforme para los usuarios.
 </p>
-                </ul>
                 <li class="encabezado">Los breakpoints en CSS son puntos de interrupción que se utilizan para cambiar la presentación de un sitio web en función del tamaño de la pantalla. Estos puntos se definen mediante "media queries" en el archivo CSS.
                     </li>
                     <ul>
@@ -134,38 +141,41 @@ body {
   }
 }
                     </code></pre>
+                    </ul>
                     <p>En este ejemplo, se establecen tres Media Queries para especificar tres conjuntos de reglas CSS diferentes para diferentes tamaños de pantalla. Cuando la pantalla es menor o igual a 767 píxeles de ancho, se aplica la primera regla CSS y la fuente se establece en 14 píxeles. Para pantallas con un ancho de entre 768 y 991 píxeles, se aplica la segunda regla CSS y la fuente se establece en 18 píxeles, y para pantallas con un ancho mayor o igual a 992 píxeles, se aplica la tercera regla CSS y la fuente se establece en 20 píxeles.
-                        Los Media Queries permiten a los diseñadores web crear una experiencia óptima para diferentes tamaños de pantalla, y asegurarse de que el contenido se muestre correctamente en cada dispositivo.</p>
-                </ul>
+                      Los Media Queries permiten a los diseñadores web crear una experiencia óptima para diferentes tamaños de pantalla, y asegurarse de que el contenido se muestre correctamente en cada dispositivo.</p>
+              
                 <li class="encabezado">La etiqueta <code>srcset</code> y <code>sizes</code> en HTML se utilizan para especificar varias versiones de una imagen para diferentes resoluciones y permitir al navegador elegir la mejor versión para cada dispositivo.</li>
                 <ul><li>Aquí hay un ejemplo de cómo se pueden usar <code>srcset</code> y <code>sizes</code>:</li>
-                <pre><code>
-                <!--
-                    <img src="small.jpg" 
-     srcset="medium.jpg 1000w, large.jpg 2000w" 
-     sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" 
-     alt="A description of the image">
-                -->
-                </code></pre>
+                
             </ul>
+            <pre><code>
+              <!--
+                  <img src="small.jpg" 
+   srcset="medium.jpg 1000w, large.jpg 2000w" 
+   sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 25vw" 
+   alt="A description of the image">
+              -->
+              </code></pre>
             <p>En este ejemplo, la <code>src</code> especifica la versión más pequeña de la imagen y se utiliza como fallback para los navegadores que no admiten <code>srcset</code> y <code>sizes</code>. La <code>srcset</code> especifica dos versiones adicionales de la imagen, una con un ancho de 1000 píxeles y otra con un ancho de 2000 píxeles. La <code>sizes</code> especifica cómo se debe utilizar cada versión de la imagen en función del ancho de la pantalla.
                 El navegador utiliza la <code>sizes</code> para calcular el ancho real de la imagen y, a continuación, elegir la mejor versión de la imagen de la <code>srcset</code> para cargar. Esto asegura que la imagen se muestre de manera óptima en cualquier dispositivo y resolución de pantalla.</p>
                 <li class="encabezado">Flexbox y Grid Layout son dos tecnologías de diseño de CSS que permiten organizar elementos de forma flexible y adaptable en la página.</li>
                 <ul>
                     <li>Flexbox es una forma de diseñar elementos en una página con un diseño de fila o columna que se ajusta automáticamente a diferentes tamaños de pantalla. Se puede usar para alinear elementos en línea, distribuir elementos de forma equitativa en una fila o columna, y manejar elementos que tienen diferentes tamaños.
                         <li>Aquí hay un ejemplo de cómo se puede usar Flexbox para organizar elementos en una fila:</li>
-                        <pre><code>
-                            <!--
-                                <div style="display: flex;">
-                                <div style="flex-grow: 1;">Item 1</div>
-                                <div style="flex-grow: 2;">Item 2</div>
-                                <div style="flex-grow: 1;">Item 3</div>
-                              </div>
-                            -->
-                            
-                        </code></pre>
+                        
                     </li>
-                </ul><
+                </ul>
+                <pre><code>
+                  <!--
+                      <div style="display: flex;">
+                      <div style="flex-grow: 1;">Item 1</div>
+                      <div style="flex-grow: 2;">Item 2</div>
+                      <div style="flex-grow: 1;">Item 3</div>
+                    </div>
+                  -->
+                  
+              </code></pre>
                 <li class="encabezado">Grid Layout es una forma de organizar elementos en una cuadrícula con filas y columnas definidas. Es útil para organizar contenido en una página de una forma más compleja que Flexbox, especialmente para aplicaciones donde se necesita una estructura de cuadrícula rigurosa.
                 
                 <p>
@@ -190,31 +200,32 @@ body {
                 <ul>
                     <li>Aquí hay un ejemplo de cómo se puede usar Font Face Observer para cargar una fuente personalizada:
                     
-                            <pre>
-                                <code>
-                                   <!--
-                                    <script>
-  var font = new FontFaceObserver('Nombre de la fuente');
-  font.load().then(function () {
-    document.documentElement.className += " font-loaded";
-  });
+                      <pre>
+                        <code>
+                           <!--
+                            <script>
+var font = new FontFaceObserver('Nombre de la fuente');
+font.load().then(function () {
+document.documentElement.className += " font-loaded";
+});
 </script>
 
 <style>
-  .font-loaded body {
-    font-family: 'Nombre de la fuente', sans-serif;
-  }
+.font-loaded body {
+font-family: 'Nombre de la fuente', sans-serif;
+}
 </style>
 
-                                   -->
-                                </code>
-                            </pre>
+                           -->
+                        </code>
+                    </pre>
                         
                     </li>
-                    <p>En este ejemplo, se crea una nueva instancia de Font Face Observer para la fuente deseada. Luego, se utiliza el método "load" para cargar la fuente de forma asíncrona y esperar a que esté lista antes de aplicarla en la página. Finalmente, se agrega una clase CSS a la etiqueta "body" cuando la fuente se ha cargado correctamente, lo que permite aplicar la fuente personalizada en la página.
-                        Usando Font Face Observer, es posible garantizar una experiencia uniforme en diferentes dispositivos, sin interrupciones en la experiencia del usuario debido a la carga de fuentes lentas.
-                        </p>
+                    
                 </ul>
+                <p>En este ejemplo, se crea una nueva instancia de Font Face Observer para la fuente deseada. Luego, se utiliza el método "load" para cargar la fuente de forma asíncrona y esperar a que esté lista antes de aplicarla en la página. Finalmente, se agrega una clase CSS a la etiqueta "body" cuando la fuente se ha cargado correctamente, lo que permite aplicar la fuente personalizada en la página.
+                  Usando Font Face Observer, es posible garantizar una experiencia uniforme en diferentes dispositivos, sin interrupciones en la experiencia del usuario debido a la carga de fuentes lentas.
+                  </p>
                 <li class="encabezado">Puedes definir un tamaño máximo para el contenedor de la imagen en CSS estableciendo un tamaño máximo en píxeles para la anchura y altura del contenedor.</li>
                 <ul>
                     <li>Por ejemplo:
@@ -227,14 +238,14 @@ body {
 }
                         </code></pre>
                         <p>Luego, puedes establecer la imagen como el fondo del contenedor y usar la propiedad "background-size: cover" para ajustar la imagen dentro del contenedor:</p>
-                        <prer><code>
+                        <pre><code>
                             .container {
                                 background-image: url(ruta/a/la/imagen.jpg);
                                 background-size: cover;
                                 background-position: center;
                               }
                               
-                        </code></prer>
+                        </code></pre>
                         <p>Esto hará que la imagen se ajuste automáticamente dentro del contenedor, manteniendo sus proporciones y cubriendo el área completa, sin distorsionar la imagen. También puedes establecer la posición de la imagen dentro del contenedor usando la propiedad "background-position".
                         </p>
                     </li>
