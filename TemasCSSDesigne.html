@@ -7,7 +7,7 @@
     <title>Temas de código CSS y diseños</title>
     <!--Librerías Prism:-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism.min.css" rel="stylesheet">
 <style>
     .marquee {
         width: 100%;
@@ -31,11 +31,46 @@
           left: -100%;
         }
       }
+      .code-win {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .code-cabeza {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+      }
+     
+      .code-input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-family: "Fira Code", monospace;
+        font-size: 14px;
+        color: #333;
+        padding: 0 10px;
+        background-color: #f5f5f5;
+      }
 </style>
 </head>
 <body>
     <ul>
-        <li>Diseño de página web:</li>
+        <li>Diseño de página web:</li></ul>
         <ol>
             <li>Diseño de encabezado y pie de página</li>
             <li>Diseño de menús y barras de navegación</li>
@@ -67,9 +102,8 @@
             <li>Diseño de responsive:</li>
             <li>Control de tamaño y posición en diferentes tamaños de pantalla</li><li>Control de menús y barras de navegación en dispositivos móviles</li>
             <li>Control de tipografía y tamaño de imágenes en diferentes tamaños de pantalla</li>
-   
     </ol>
-</ul>
+
 <p>La etiqueta correcta en HTML para los encabezados es <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> o <code>&lt;h6&gt;</code>. <code>&lt;heading&gt;</code> no es una etiqueta válida en HTML.
     Las etiquetas de encabezado se utilizan para definir los encabezados de una página o sección de una página, y se utilizan para estructurar el contenido y proporcionar información semántica sobre la estructura del documento. <code>&lt;h1&gt;</code> es el encabezado principal y <code>&lt;h6&gt;</code> es el encabezado secundario más pequeño.</p>
 <p>La etiqueta <code>&lt;marquee&gt;</code> es una etiqueta válida en HTML. Esta etiqueta se utiliza para crear una animación de texto que desplaza el contenido de un lado a otro de la página.
@@ -81,10 +115,10 @@
   </div>
 
     <!--INICIO Código para ventana fragmento con copy-->
-  <div id="code-window">
-    <div id="code-header">
+  <div id="code-window" class="code-win">
+    <div id="code-header" class="code-cabeza">
       <span>Code HTML</span>
-      <button id="copy-btn">
+      <button type="button" id="copy-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -93,7 +127,7 @@
         <span>Copy Code</span>
       </button>
     </div>
-    <pre><code id="code-input" class="language-html">
+    <pre><code id="code-input" class="code-input language-html">
 
           <textarea>
             <div class="marquee">
@@ -104,10 +138,10 @@
   </div>
   <!--FIN Código para ventana fragmento con copy-->
  <!--INICIO Código para ventana fragmento con copy-->
- <div id="code-window">
-    <div id="code-header">
+ <div id="code-window-2" class="code-win">
+    <div id="code-header-2" class="code-cabeza">
       <span>Code CSS</span>
-      <button id="copy-btn">
+      <button type="button" id="copy-btn-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -116,7 +150,7 @@
         <span>Copy Code</span>
       </button>
     </div>
-    <pre><code id="code-input" class="language-css">
+    <pre><code id="code-input-2" class="code-input language-css">
 
           <textarea>
             .marquee {
@@ -124,7 +158,6 @@
                 overflow: hidden;
                 position: relative;
               }
-              
               .marquee p {
                 display: inline-block;
                 white-space: nowrap;
@@ -132,7 +165,6 @@
                 left: 100%;
                 animation: marquee 5s linear infinite;
               }
-              
               @keyframes marquee {
                 0% {
                   left: 100%;
@@ -145,8 +177,23 @@
         </code></pre>
   </div>
   <!--FIN Código para ventana fragmento con copy-->
-
-
- 
+  <script>
+    const copyBtn = document.getElementById("copy-btn");
+    const codeInput = document.getElementById("code-input");
+    const codeWindow = document.getElementById("code-window");
+    
+    copyBtn.addEventListener("click", () => {
+      const codeInputValue = codeInput.innerText;
+      navigator.clipboard.writeText(codeInputValue);
+    });
+    
+    // Function to adjust the height of code-window to the height of code-input
+    function adjustCodeWindowHeight() {
+      codeWindow.style.height = `${codeInput.offsetHeight + 50}px`;
+    }
+    // Call the function on load and on any changes to the code-input
+    window.addEventListener("load", adjustCodeWindowHeight);
+    codeInput.addEventListener("input", adjustCodeWindowHeight);
+          </script>
 </body>
 </html>
