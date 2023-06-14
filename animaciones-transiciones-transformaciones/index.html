@@ -10,56 +10,21 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/prism-markup.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
-    <style>
-        h1 {
-            background-color: aqua;
-            padding: 10px;
-            text-align: center;
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 0;
-        }
 
-        p {
-            font-size: 20px;
-            font-weight: 500;
-            color: #369;
-
-        }
-
-        code {
-            font-size: 20px;
-            font-weight: 500;
-            color: rgb(21, 42, 63);
-        }
-
-        footer {
-            background-color: aqua;
-            padding: 10px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 700;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <h1>
-            Programación CSS - Animaciones, transiciones y transformaciones.
+            Animaciones, transiciones y transformaciones.
         </h1>
     </header>
-    <ul>
-        <li>
             <h3><u>Animaciones CSS</u></h3>
             <p>Las animaciones CSS le permiten añadir detalles visuales interesantes y creativos a
                 sus aplicaciones web y sitios web. Estas
                 animaciones se pueden lograr definiendo propiedades CSS en varias partes de la aplicación.
                 Por ejemplo, puede definir que una imagen cambie de tamaño cuando el usuario sobrepase un punto
                 dado usando la propiedad CSS <code class="code"> transition</code>.</p>
-        </li>
-    </ul>
     <p>Animación CSS básica:</p>
 
   <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº", "code-snippet-nº" y "copy-button-nº" por el que corresponda -->
@@ -81,6 +46,8 @@
                     transform: translateX(100px);
                 }
             }
+                Esta animación moverá un elemento a lo largo de la horizontal 100px
+                en un total de 5 segundos, con una 'ease-in-out' lenta al principio y al final.
     </code></pre>
         <button type="button" id="copy-button-1" class="copy-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -92,10 +59,6 @@
     </div>
 </div>
     <!--FIN Código para ventana fragmento con copy-->
-    <p>
-        Esta animación moverá un elemento a lo largo de la horizontal 100px en un total de 5 segundos, con una <code
-            class="code">ease-in-out</code> lenta al principio y al final.
-    </p>
     <p>Para dar algunas animaciones a tu código CSS, necesitas definir una transición primero.
         Una transición le dice al navegador que propiedades cambiar gradualmente al poner un elemento sobre <code
             class="code">hover</code> o cuando se activa cualquier otra acción. Esto se puede lograr agregando la
@@ -155,8 +118,6 @@
     <!--FIN Código para ventana fragmento con copy-->
     <p>En el anterior ejemplo, el ancho del elemento cambiará gradualmente desde un 50% hasta un 75% cuando el usuario
         coloque el ratón sobre él.</p>
-    <ul>
-        <li>
             <h3><u>Transiciones CSS</u></h3>
             <p>La propiedad CSS <code>transition</code> indica una ruta entre los cambios en la interfaz
                 de usuario, lo que significa que mantiene un aspecto organizado durante los cambios en la IU. Se pueden
@@ -164,17 +125,12 @@
                 transiciones entre los cambios de estilo para las distintas casillas de entrada, botones y otras partes
                 de la
                 aplicación.</p>
-        </li>
-    </ul>
     <p>
         Las transiciones CSS permiten cambiar un estilo de CSS de manera suave, gradual y sin interrumpir otros estilos
         del elemento. Estas transiciones se activan automáticamente cuando un usuario interactúa con el elemento o
         cuando
         se cambia el valor de una propiedad de CSS.</p>
-    <p>Para obtener más información acerca de cómo funcionan las transiciones CSS, consulte la página web MDN sobre
-        <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions#Controlling_the_duration_of_a_transition"
-            target="_blank">transiciones CSS</a>.
-    </p>
+
 
     <!----------------------- Inicio de fragmento cambiar 'nº' en  "open-modal-nº", "modal-nº", "code-snippet-nº" y "copy-button-nº" por el que corresponda -->
 <button type="button" id="open-modal-4" class="open-modal">Ver código CSS</button>
@@ -237,9 +193,6 @@
     </div>
 </div>
     <!--FIN Código para ventana fragmento con copy-->
-
-    <ul>
-        <li>
             <h3><u>Transformaciones CSS</u></h3>
             <p>Usando la propiedad CSS <code class="code">transform</code>, puede transformar elementos del interface de
                 usuario para escalarlos, rotarlos, desplazarlos y más. Esto se puede usar para crear efectos
@@ -249,8 +202,6 @@
                 transiciones, la propiedad<code class="code"> transform</code> siempre se puede usar para mantener una
                 IU
                 organizada sin perder la funcionalidad de la misma.</p>
-        </li>
-    </ul>
     <p>Las transformaciones CSS sirven para modificar la apariencia de un elemento mediante la rotación, escalado,
         desplazamiento y otros. Estas transformaciones pueden ser útiles para crear interacciones interesantes y fluidas
         para los usuarios.</p>
@@ -267,6 +218,7 @@
             .example {
                 transform: translateX(100px);
             }
+            Este ejemplo moverá el elemento con la clase '.example' 100px hacia la derecha.
     </code></pre>
         <button type="button" id="copy-button-6" class="copy-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -278,7 +230,6 @@
     </div>
 </div>
     <!--FIN Código para ventana fragmento con copy-->
-    <p>Este ejemplo moverá el elemento con la clase <code class="code">.example</code> 100px hacia la derecha.</p>
     <p>Las transformaciones le permiten cambiar el tamaño, rotación y ubicación de un elemento en la pantalla usando
         solamente código CSS. Esto se logra usando la propiedad <code class="coe">transform</code>, como en el siguiente
         ejemplo:
@@ -311,6 +262,11 @@
     </div>
 </div>
     <!--FIN Código para ventana fragmento con copy-->
+    <h3><u>Enlaces importantes</u></h3>
+    <p>Para obtener más información acerca de cómo funcionan las transiciones CSS, consulte la página web MDN sobre
+        <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions#Controlling_the_duration_of_a_transition"
+            target="_blank">transiciones CSS</a>.
+    </p>
     <footer>&copy; 2023 - EDF Diseño Web</footer>
     <script src="./script.js"></script>
 </body>
